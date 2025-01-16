@@ -1,0 +1,731 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Poppins','sans-serif';
+}
+
+.nav-buttons
+{
+    margin-left: 60%;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+
+h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+h5{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h6{
+    color: #D8D8D8;
+}
+
+.logo
+{
+width: 40px;
+height: 30px;
+}
+.navbar
+{
+    font-size: 16px;
+    padding-top: 2rem !important;
+    padding-left: 2rem !important;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+   
+}
+
+
+.nav-link
+{
+  padding: 0 20px;
+  color: #000;
+  transition: 0.4s ease;
+}
+
+.navbar .nav-link:hover, 
+.navbar .nav-item i:hover,
+.navbar .nav-link:active 
+{
+    color: yellowgreen ;
+}
+
+.navbar i{
+    font-size: 1.2rem;
+    padding: 0 0.7px;
+    margin-left: 5px ;
+    transition: 0.4s ease;
+
+}
+
+.cart-quantity
+{
+background-color:  yellowgreen;
+color:#fff;
+padding:2px 5px;
+border-radius: 50%;
+margin:-5px;
+font-size: 14px;
+}
+
+@media only screen and (max-width:990px)
+{
+    .nav-buttons
+    {
+      margin: 10px;
+    }
+
+     .navbar-nav
+    {
+      margin: 16px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
+    }
+    .nav-item .fas
+    {
+       margin: 20px 10px 10px 20px;
+    }
+}
+/************************************************/
+
+#Home
+{
+background-image: url('../img/clothes.jpg');
+width: 100%;
+height: 100vh;
+background-size: cover;
+background-position-x: -500px ; 
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+color:rgb(255, 255, 255);
+}
+
+#Home .Best-Prices
+{
+color: yellowgreen;
+}
+
+
+.shop-now {
+    background-color: rgba(192, 141, 141, 0.507); 
+    color: white; 
+    font-size: 16px; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+   
+  }
+
+.shop-now:hover 
+{
+background-color: yellowgreen; 
+}
+
+.sections-container 
+{
+display: flex;
+flex-direction: row;
+gap: 3px; 
+}
+
+#search 
+{
+    flex: 2; 
+}
+
+#shop 
+{
+    flex: 10;
+}
+  
+/************************************************/
+
+#Card .one .img
+{
+width: 100%;
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#Card .one .details:hover
+{
+background-color: rgb(143, 143, 51);
+}
+
+#Card .one
+{
+position: relative;
+}
+
+#Card .one .details
+{
+position: absolute;
+top: 0;
+left: 0;
+color: rgb(236, 223, 223);
+font-weight: bold;
+transition: 0.4s ease;
+opacity: 0.5;
+background-color: black;
+width: 100%;
+height: 100%;
+}
+
+#Card .one:nth-child(1) .details
+{
+display: flex;
+flex-direction: column;
+justify-content: center; 
+align-items: flex-start;
+text-align: start; 
+} 
+
+
+#Card .one:nth-child(2) .details
+{
+display: flex;
+flex-direction: column;
+justify-content: center; 
+align-items: center;
+text-align: center; 
+} 
+
+
+#Card .one:nth-child(3) .details
+{
+display: flex;
+flex-direction: column;
+justify-content: center; 
+align-items: flex-end;
+text-align: end; 
+} 
+
+.stars{
+    padding:20px 0;
+}
+
+.stars i
+{
+
+color: goldenrod;
+}
+/***************************************************/
+
+
+.hr-Home {
+    width: 30px; 
+    opacity: 1 ;
+    margin:  10px auto; 
+    border: 3px solid yellow;
+    
+  }
+  
+/***************************************************/
+.product
+{
+cursor:pointer;
+margin-bottom: 28px;
+}
+
+.product .img
+{
+transition: 0.3s all;
+}
+
+
+.product:hover .img
+{
+opacity:0.7;
+}
+
+.product .shop-now
+{
+transform: translateY(50px);
+transition: 0.3s all;
+opacity: 0;
+
+}
+
+.product:hover .shop-now
+{
+transform: translateY(0px);
+opacity: 1;
+
+}
+/***************************************/
+
+#Banner
+{
+background-image: url('../img/clothes.jpg');
+width: 100%;
+height: 60vh;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position-x: -500px ; 
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+color:rgb(255, 255, 255);
+}
+
+#Banner h1
+{
+color:  yellowgreen;
+padding: 20px 0px;
+}
+/*******************************/
+footer
+{
+background-color: black;
+}
+
+footer h5
+{
+color: white;
+font-weight: 700;
+font-size: 14px;
+}
+footer ul {
+    list-style: none;  
+}
+footer li 
+{
+padding-bottom: 4px;
+
+}
+
+footer li a
+{
+font-size: 14px;
+color: #999;
+text-decoration: none;
+}
+
+footer li a:hover
+{
+color:white
+}
+
+footer .copyright a
+{
+color: black;
+height: 40px;
+width: 40px;
+background-color: white;
+display: inline-flex;
+text-align: center;
+align-items: center; 
+justify-content: center;
+border-radius: 50%;
+transition: 0.3s ease ;
+margin: 0 5px;
+text-decoration: none;
+
+}
+
+footer .copyright a:hover
+{
+color: white;
+background-color:  yellowgreen;
+}
+footer p
+{
+color: #999;
+font-size: 0.8rem;
+}
+
+
+.payment
+{
+width: 50px;
+}
+/***********************************************************************************************************/
+
+/* shop  page */
+
+.hr-Shop 
+{
+    width: 30px; 
+    opacity: 1 ;
+    border: 4px solid yellow;  
+}
+
+.small-img-group
+{
+display: flex;
+justify-content: space-between;
+}
+
+.small-img-col
+{
+ /* flex-basis: 50%;  */
+cursor: pointer;
+padding-left: 10px;
+}
+/************************************************************************************************************/
+/*single product page*/
+
+.single-product input
+{
+width: 50px;
+height: 40px;
+padding-left: 10px;
+font-size: 16px;
+margin-right: 10px;
+}
+
+.single-product input:focus
+{
+outline: none;
+}
+
+.single-product .shop-now
+{
+background-color: yellowgreen;
+opacity: 1;
+transition: 0.4s all;
+}
+
+.single-product .shop-now:hover
+{
+background-color: black;
+}
+/*******************************************************************************************************************/
+
+/*cart page*/
+
+.cart table
+{
+width: 100%;
+
+
+}
+
+.cart .product-info
+{
+display: flex;
+flex-wrap: wrap;
+}
+
+.cart th
+{
+
+padding: 5px 10px;
+color: #fff;
+background-color:  yellowgreen;
+}
+
+.cart th:last-child
+{
+text-align: right;
+} 
+
+.cart td
+{
+   padding: 10px 20px; 
+}
+
+.cart td img
+{
+width: 80px;
+height: 80px;
+margin-right: 10px;
+}
+
+.cart td a
+{
+    color: yellowgreen;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.cart .remove-btn,.edit-btn{
+    color: yellowgreen;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #fff;
+    border: none;
+    width:100% ;
+}
+
+.cart .product-info p{
+    margin: 3px;
+}
+
+
+.cart input
+{
+width: 50px;
+height: 30px;
+padding-left: 10px;
+font-size: 16px;
+margin-right: 10px;
+}
+
+
+
+.cart input:focus
+{
+outline: none;
+}
+
+.cart-total
+{
+display: flex;
+justify-content: flex-end;
+}
+
+ .cart-total table {
+    width: 100%;
+    max-width: 500px;
+    border-top: 3px solid rgb(206, 206, 73);
+
+}
+
+ td:last-child
+ 
+ {
+    text-align: right;
+}
+
+.checkout-container
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+#checkout-btn
+{
+color: white;
+background-color:  yellowgreen;
+font-size: 16px; 
+padding: 15px 10px; 
+border: none; 
+text-align: center;
+border-radius: 5px; 
+cursor: pointer;
+transition: background-color 0.3s ease;
+width:100px;
+height: 50px;
+
+}
+#checkout-btn:hover{
+    background-color: black;
+}
+
+
+
+/********************************************************************************************************/
+
+/*login page*/
+
+
+#login-form
+{
+width: 50%;
+margin: 5px auto;
+padding: 20px;
+border-top: 1px solid yellow;
+text-align: center;
+}
+
+#login-form input{
+    width: 50%;
+    margin: 5px auto;
+}
+
+#login-form  #login-btn{
+    background-color:  yellowgreen;
+    color: white;
+}
+
+#login-form #register-url{
+    color:  yellowgreen;
+}
+
+/*********************************************************************************************************/
+/*register page*/
+
+#register-form
+{
+width: 50%;
+margin: 5px auto;
+padding: 20px;
+border-top: 1px solid red;
+text-align: center;
+}
+
+#register-form input{
+    width: 50%;
+    margin: 5px auto;
+}
+
+#register-form  #register-btn{
+    background-color: yellowgreen;
+    color: white;
+}
+
+#register-form #login-url{
+    color:  yellowgreen;
+}
+/*************************************************************************************************************/
+
+/* account page*/
+
+#account-form
+{
+width: 50%;
+margin: 35px auto;
+padding: 20px;
+text-align: center;
+}
+
+
+#account-form input{
+
+    margin: 5px auto;
+}
+
+#account-form  #change-password-btn{
+    background-color:  yellowgreen;
+    color: white;
+}
+
+.account-info #orders-btn,#logout-btn{
+   
+    color:  yellowgreen;
+    text-decoration: none ;
+}
+
+ .orders .product-info
+{
+    display:flex;
+    flex-wrap: wrap;
+
+} 
+
+.orders .product-info p{
+    margin: 3px;
+}
+
+.orders table
+{
+width: 100%;
+
+}
+
+
+
+.orders th
+{
+
+
+padding: 5px 20px;
+color: #fff;
+background-color:  yellowgreen ;
+}
+
+.orders th:last-child
+{
+text-align: right;
+} 
+
+.orders td
+{
+padding: 10px 25px;
+}
+
+
+.orders td img
+{
+width: 80px;
+height: 80px;
+margin-right: 10px;
+
+} 
+/********************************************************************************************************/
+
+/*Checkout page */
+
+
+#place-order-form .place-order-small-element
+{
+display: inline-block;
+width: 48%;
+margin:10px auto;
+}
+
+#place-order-form .place-order-large-element
+{
+    width:96%;
+}
+
+#place-order-form .place-order-btn-container
+{
+margin: 10px;
+text-align: right;
+margin-right: 40px;
+}
+
+
+ #place-order-btn
+{
+color: white;
+background-color:  yellowgreen;
+font-size: 16px; 
+padding: 10px 20px; 
+border: none; 
+border-radius: 5px; 
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+#place-order-btn:hover{
+    background-color: black;
+}
+/********************************************************************************************************/
+
+/*contact*/
+
+#contact span{
+    color: yellowgreen;
+}
+
+/*********************************************************************************************************/

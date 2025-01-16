@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    /* height: 100vh; */
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 60px;  /* Add padding to the body to prevent content from being hidden under pagination */
+      
+      
+}
+
+/* Header Styles (Logo and Sign Out Button) */
+header {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    width: 25px; 
+}
+
+header .header-actions {
+    display: flex;
+    align-items: center;
+}
+
+header .sign-out {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin-right: 30px;
+    background-color: #f44336; /* Red color */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header .sign-out:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+
+/* SideBar */
+
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    padding-top: 80px;
+    position: fixed;
+    left: 0; 
+    top: 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin-top: 10px
+}
+
+.sidebar ul li {
+    padding: 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #444;
+}
+
+
+.contentss {
+    padding-top: 0;
+}
+
+/* When the horizontal sidebar is shown (collapse is open), apply padding */
+#horizontal-sidebar.collapse.show ~ .contentss {
+    padding-top: 250px;
+}
+
+
+/* Sidebar initially hidden on mobile devices */
+@media (max-width: 768px) {
+   
+    #horizontal-sidebar {
+        transform: translateY(-100%); /* Hide the sidebar */
+        opacity: 0;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        flex-direction: row;
+        width: 100%; 
+        height: auto; 
+        padding: 10px ; 
+        position: fixed;
+        top: 56px; 
+        left: 0;
+        background-color: #343a40;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+        z-index: 999;
+    }
+
+    #horizontal-sidebar.show {
+        opacity: 1;
+        transform: translateY(0); /* Show the sidebar */
+       
+    }   
+
+    .index-cards{
+
+        margin-left: 80px;
+        margin-top: 100px;;
+    }
+     
+}
+
+
+
+
