@@ -1,5 +1,4 @@
 # E-Commerce PHP Project
-
 ## Description
 This is a simple e-commerce web application built using PHP, designed for both customers and admins. It allows customers to browse products, register, log in, place orders, and manage their shopping carts. Admin users can add, edit, and delete products, manage orders, and oversee the store's inventory.
 
@@ -18,3 +17,29 @@ Admin Login: Secure login for the admin panel.
 Product Management: Add, edit, and delete products from the store.
 Order Management: View and manage orders placed by customers.
 Image Uploads: Admins can upload images for products.
+
+## Technologies Used
+PHP 8.x
+MySQL
+HTML5, CSS3
+JavaScript (for front-end interactivity)
+Bootstrap (for responsive design)
+
+## Installation
+1. Clone the repository:
+git clone https://github.com/yourusername/ecommerce-php.git
+
+2.Set up a local server (like XAMPP or WAMP) or use a web hosting provider that supports PHP.
+
+3.Create a MySQL database and import the provided SQL schema (ecommerce.sql) to set up the necessary tables.
+
+4.Update database credentials in the configuration file (e.g., config.php).
+
+5. Write in the your project terminal php -S localhost:8000
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contributing
+Feel free to fork this project, create a pull request, or open issues for enhancements and bug fixes.
+
